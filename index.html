@@ -9,33 +9,37 @@
 <body>
     <h1>나는 계산7!다.</h1>
     <table  class="table table-bordered">
-        <tr>
-            <th colspan="4" id="th">계산 식=>111+21=??</th>
-        </tr>
-        <tr>
-            <td onclick="num_click();">7</td>
-            <td>8</td>
-            <td>9</td>
-            <td>×</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>5</td>
-            <td>6</td>
-            <td>÷</td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>＋</td>
-        </tr>
-        <tr>
-            <td>.</td>
-            <td>0</td>
-            <td>=</td>
-            <td>－</td>
-        </tr>
+        <thead>
+            <tr>
+                <th colspan="4" id="th"></th>
+            </tr>
+         </thead>
+          <tbody>
+            <tr>
+                <td onclick="num7_click();" id="seven">7</td>
+                <td onclick="num8_click();" id="eight">8</td>
+                <td onclick="num9_click();" id="nine">9</td>
+                <td onclick="mul_click();" id="mul">×</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>÷</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>＋</td>
+            </tr>
+            <tr>
+                <td>.</td>
+                <td>0</td>
+                <td onclick="is_click();" id="is">=</td>
+                <td>－</td>
+            </tr>
+        </tbody>
     </table>
     <script src="javascript.js"></script>
 </body>
