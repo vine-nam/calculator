@@ -13,22 +13,26 @@ var result = document.getElementsByTagName('th')[0];
 //var result = "9×9";
 var get_num;
 
-function num7_click() {
-    get_num = document.getElementById('seven').textContent;
+//모든 td에 onclick 함수를 추가한다.
+//하고 싶은데 어떻게 하는 거지???
+/*
+(function() {
+    var tds = document.getElementsByTagName("td");
+    for(var i=0; i<tds.length; i++){
+        tds[i].addEventListener("num_click(this);");
+    }
+}());
+*/
+
+//td에 대한 onclick함수
+//td의 값을 th에 입력한다.
+function num_click(num) {
+    get_num = num.textContent;
     result.textContent += get_num;
 }
-function num8_click() {
-    get_num = document.getElementById('eight').textContent;
-    result.textContent += get_num;
-}
-function num9_click() {
-    get_num = document.getElementById('nine').textContent;
-    result.textContent += get_num;
-}
-function mul_click() {
-    get_num = document.getElementById('mul').textContent;
-    result.textContent += get_num;
-}
+
+//'='에 대한 onclick 함수
+//값을 계산해서 출력 한다.
 function is_click() {
     result2 = document.getElementsByTagName('th')[0].textContent;
     //result2=result;
@@ -66,6 +70,7 @@ function is_click() {
                 }
         }
     }
-    result2 = num * num2;
+    result2 += ' = ';
+    result2 += num * num2;
     result.textContent = result2;
 }
