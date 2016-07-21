@@ -31,6 +31,11 @@ function num_click(num) {
     result.textContent += get_num;
 }
 
+//C를 누르면 th내용을 지운다.
+function erase_click() {
+    result.textContent = "";
+}
+
 //'='에 대한 onclick 함수
 //값을 계산해서 출력 한다.
 function is_click() {
