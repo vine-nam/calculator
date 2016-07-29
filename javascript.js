@@ -24,6 +24,13 @@ var get_num;
 }());
 */
 
+//th에 click 이벤트 설정
+//C랑 =는 어떻하지...?(다른 함수씀);;;
+$('td').on('click', function() {
+    num_click(this);
+});
+
+
 //td에 대한 onclick함수
 //td의 값을 th에 입력한다.
 function num_click(num) {
